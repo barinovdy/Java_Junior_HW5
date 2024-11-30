@@ -27,7 +27,6 @@ public class ClientManager implements Runnable{
         }
     }
 
-
     @Override
     public void run() {
         String massageFromClient;
@@ -44,7 +43,6 @@ public class ClientManager implements Runnable{
         }
     }
 
-
     private void broadcastMessage(String message){
         for (ClientManager client: clients) {
             try {
@@ -59,7 +57,6 @@ public class ClientManager implements Runnable{
             }
         }
     }
-
 
     private void closeEverything(Socket socket, BufferedReader bufferedReader, BufferedWriter bufferedWriter) {
         // Удаление клиента из коллекции
